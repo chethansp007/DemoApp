@@ -83,6 +83,9 @@
 		D606BEFA1D72E3F200C29723 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D606BEFC1D72E3F200C29723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D606BEFE1D72E3F200C29723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A772ED1D730C8E00290E71 /* DemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoApp.entitlements; sourceTree = "<group>"; };
+		D6A772EE1D730CA500290E71 /* DemoApp WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DemoApp WatchKit App.entitlements"; sourceTree = "<group>"; };
+		D6A772EF1D730CA900290E71 /* DemoApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DemoApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 		D606BED01D72E3F100C29723 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				D6A772ED1D730C8E00290E71 /* DemoApp.entitlements */,
 				D606BED11D72E3F100C29723 /* AppDelegate.swift */,
 				D606BED31D72E3F100C29723 /* ViewController.swift */,
 				D606BED51D72E3F100C29723 /* Main.storyboard */,
@@ -139,6 +143,7 @@
 		D606BEE41D72E3F100C29723 /* DemoApp WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				D6A772EE1D730CA500290E71 /* DemoApp WatchKit App.entitlements */,
 				D606BEE51D72E3F100C29723 /* Interface.storyboard */,
 				D606BEE81D72E3F100C29723 /* Assets.xcassets */,
 				D606BEEA1D72E3F100C29723 /* Info.plist */,
@@ -149,6 +154,7 @@
 		D606BEF31D72E3F200C29723 /* DemoApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D6A772EF1D730CA900290E71 /* DemoApp WatchKit Extension.entitlements */,
 				D606BEF61D72E3F200C29723 /* InterfaceController.swift */,
 				D606BEF81D72E3F200C29723 /* ExtensionDelegate.swift */,
 				D606BEFA1D72E3F200C29723 /* NotificationController.swift */,
@@ -238,18 +244,33 @@
 						DevelopmentTeam = A6LZH3M2NF;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D606BEDF1D72E3F100C29723 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A6LZH3M2NF;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D606BEEE1D72E3F200C29723 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A6LZH3M2NF;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -461,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "DemoApp WatchKit Extension/DemoApp WatchKit Extension.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = A6LZH3M2NF;
 				INFOPLIST_FILE = "DemoApp WatchKit Extension/Info.plist";
@@ -481,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "DemoApp WatchKit Extension/DemoApp WatchKit Extension.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = A6LZH3M2NF;
 				INFOPLIST_FILE = "DemoApp WatchKit Extension/Info.plist";
@@ -502,6 +525,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DemoApp WatchKit App/DemoApp WatchKit App.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = A6LZH3M2NF;
 				IBSC_MODULE = DemoApp_WatchKit_Extension;
@@ -523,6 +547,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DemoApp WatchKit App/DemoApp WatchKit App.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = A6LZH3M2NF;
 				IBSC_MODULE = DemoApp_WatchKit_Extension;
@@ -543,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = A6LZH3M2NF;
 				INFOPLIST_FILE = DemoApp/Info.plist;
@@ -559,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = A6LZH3M2NF;
 				INFOPLIST_FILE = DemoApp/Info.plist;
