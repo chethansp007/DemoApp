@@ -236,16 +236,19 @@
 					D606BECD1D72E3F100C29723 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A6LZH3M2NF;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 					};
 					D606BEDF1D72E3F100C29723 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A6LZH3M2NF;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 					};
 					D606BEEE1D72E3F200C29723 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A6LZH3M2NF;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -587,6 +590,7 @@
 				D606BF031D72E3F200C29723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D606BF051D72E3F200C29723 /* Build configuration list for PBXNativeTarget "DemoApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +599,7 @@
 				D606BF071D72E3F200C29723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D606BF091D72E3F200C29723 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +608,7 @@
 				D606BF0B1D72E3F200C29723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
